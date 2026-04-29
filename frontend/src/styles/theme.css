@@ -1,0 +1,47 @@
+:root {
+--bg: #020617;
+--glass: rgba(255, 255, 255, 0.05);
+--border: rgba(255,255,255,0.1);
+--accent: #3b82f6;
+}
+
+body {
+background: radial-gradient(circle at top, #0f172a, #020617);
+color: white;
+}
+
+/* GLASS CARD */
+.card {
+background: var(--glass);
+backdrop-filter: blur(12px);
+border: 1px solid var(--border);
+border-radius: 16px;
+padding: 20px;
+transition: 0.3s;
+}
+
+.card:hover {
+transform: translateY(-5px);
+}
+
+/* GRID */
+.grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+gap: 20px;
+}
+
+/* BUTTON */
+button {
+background: linear-gradient(135deg, #3b82f6, #2563eb);
+border: none;
+padding: 10px 20px;
+border-radius: 10px;
+color: white;
+cursor: pointer;
+transition: 0.3s;
+}
+
+button:hover {
+transform: scale(1.05);
+}

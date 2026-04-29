@@ -1,0 +1,13 @@
+export default function GradCamView({ image }) {
+  return (
+    <div className="card">
+      <h3>Grad-CAM</h3>
+
+      {image ? (
+        <img src={image} style={{ width: "100%", borderRadius: 10 }} />
+      ) : (
+        <p>No image</p>
+      )}
+    </div>
+  );
+}
